@@ -163,7 +163,7 @@ const updateVehicleStatus = async (req, res) => {
       const vehicle = await Vehicle.findById(id);
   
       if (!vehicle) {
-        return res.status(404).json({ message: 'Vehicle not found.' });
+        return res.status(404).json({ message: 'Vehicle not found.!' });
       }
   
       
